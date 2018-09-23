@@ -1,0 +1,26 @@
+.ntr-header {
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0)!important;
+}
+
+.ntr-flex {
+	justify-content: flex-start!important;
+	align-items: center;
+}
+
+.ntr-card {
+	margin: 25px;
+	width: 125px!important;
+	height: 200px!important;
+}
+
+.ntr-card-container {
+	/* width: 150%; */
+	justify-content: center;
+	align-items: center;
+}
+
+.ntr-page {
+	margin-left: -10%!important;
+	margin-right: -10%!important;
+	float: none;
+}
