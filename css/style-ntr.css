@@ -24,3 +24,7 @@
 	margin-right: -10%!important;
 	float: none;
 }
+
+#ntr-create-account {
+	display: none;
+}
