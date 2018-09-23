@@ -1,71 +1,55 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-<title>notr</title>
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/style-ntr.css">
-<link rel="stylesheet" href="css/fonts/fonts.css">
-
-</head>
-<body>
-  <div class="vi-page">
-<div>
-<div class="vi-header ntr-header"></div>
-
-  <div class="vi-header-container">
-    <div class="vi-logo">
-    <img src="src/assets/logo.svg">
-    </div>
-    <div class="vi-dot">
-
-    <button onclick="viClick()" id="vi-button-promo">Test onclick</button>
-    </div>
-</div>
-
-</div>
-
-<div class="ntr-page">
-  <div id="ntr-login">
-<div class="vi-sub vi-box vi-flex vi-fullscreen-post vi-column">
-  <form class="vi-flex vi-column">
-<input type="email" class="vi-input vi-form vi-margin-l" id="ntr-email" />
-<input type="password" class="vi-input vi-form vi-margin-l" id="ntr-passwd" />
-</form>
-<div class="vi-row vi-margin-s vi-column-mobile">
-<button class="vi-button-nav vi-margin-s" placeholder="email or login">Login</button>
-<p class="vi-static" style="text-align: center; font-size: 8pt;"><a onclick="ifHaveAccount()" class="vi-a-code">Create an account</a></p>
-</div>
-</div>
-</div>
-
-<div id="ntr-create-account">
-<div class="vi-sub vi-box vi-flex vi-fullscreen-post vi-column">
-<form class="vi-flex vi-column">
-
-<!--<label for="ntr-email-signup" class="sr-only">email</label>-->
-<input type="email" class="vi-input vi-form vi-margin-l" id="ntr-email-singup" />
-<!--<label for="ntr-username" class="sr-only">username</label>-->
-<input type="text" class="vi-input vi-form vi-margin-l" id="ntr-username" />
-<!--<label for="ntr-passwd-signup" class="sr-only">password</label>-->
-<input type="password" class="vi-input vi-form vi-margin-l" id="ntr-passwd-signup" />
-<!--<label for="ntr-confirm-passwd" class="sr-only">confirm password</label>-->
-<input type="password" class="vi-input vi-form vi-margin-l" id="ntr-confirm-passwd" />
-</form>
-<div class="vi-row vi-margin-s vi-column-mobile">
-<button class="vi-button-nav-outline vi-margin-s" placeholder="passwd">Sign Up</button>
-<p class="vi-static" style="text-align: center; font-size: 8pt;"><a onclick="ifHaveAccount()" class="vi-a-code">I have an account</a></p>
-</div>
-</div>
-</div>
-
-</div>
-
-
-</div>
-</body>
-<footer>
-</footer>
-<script src="js/scr.js">
-</script>
+   <head>
+      <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+      <title>notr</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/style-ntr.css">
+      <link rel="stylesheet" href="css/fonts/fonts.css">
+   </head>
+   <body>
+      <div class="vi-page">
+         <div>
+            <div class="vi-header ntr-header"></div>
+            <div class="vi-header-container">
+               <div class="vi-logo">
+                  <img src="src/assets/logo.svg">
+               </div>
+               <div class="vi-dot">
+                  <button onclick="viClick()" id="vi-button-promo">Test onclick</button>
+               </div>
+            </div>
+         </div>
+         <div class="ntr-page">
+            <div id="ntr-login">
+               <div class="vi-sub vi-box vi-flex vi-fullscreen-post vi-column">
+                  <form class="vi-flex vi-column">
+                     <input type="email" class="vi-input vi-form vi-margin-l" id="ntr-email" placeholder="username" />
+                     <input type="password" class="vi-input vi-form vi-margin-l" id="ntr-passwd" placeholder="password" />
+                     <button class="vi-button-nav vi-margin-s" placeholder="email or login">Login</button>
+                  </form>
+                  <div class="vi-row vi-margin-s vi-column-mobile">
+                     <p class="vi-static" style="text-align: center; font-size: 8pt;"><a onclick="ifHaveAccount()" class="vi-a-code">Create an account</a></p>
+                  </div>
+               </div>
+            </div>
+            <div id="ntr-create-account">
+               <div class="vi-sub vi-box vi-flex vi-fullscreen-post vi-column">
+                  <form class="vi-flex vi-column" action="auth/register" method="POST">
+                     <input type="email" class="vi-input vi-form vi-margin-l form-control" id="ntr-email-singup" name="email" placeholder="email" />
+                     <input type="text" class="vi-input vi-form vi-margin-l form-control" id="ntr-username" name="username" placeholder="username" />
+                     <input type="password" class="vi-input vi-form vi-margin-l form-control" id="ntr-passwd-signup" name="password" placeholder="password" />
+                     <input type="password" class="vi-input vi-form vi-margin-l form-control" id="ntr-confirm-passwd" name ="confirmationPassword" placeholder="confirm password" />
+                     <button class="vi-button-nav-outline vi-margin-s" placeholder="passwd">Sign Up</button>
+                  </form>
+                  <div class="vi-row vi-margin-s vi-column-mobile">
+                     <p class="vi-static" style="text-align: center; font-size: 8pt;"><a onclick="ifHaveAccount()" class="vi-a-code">I have an account</a></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+   <footer></footer>
+   <script src="js/scr.js"></script>
 </html>
